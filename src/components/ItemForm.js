@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
+
 function ItemForm({ onItemFormSubmit }) {
   const [itemName, setItemName] = useState("");
   const [itemCategory, setItemCategory] = useState("Produce");
@@ -11,6 +12,7 @@ function ItemForm({ onItemFormSubmit }) {
   function handleCategoryChange(event) {
     setItemCategory(event.target.value);
   }
+
   function handleSubmit(event) {
     event.preventDefault();
 
